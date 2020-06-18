@@ -3,6 +3,7 @@ package com.saira.walletapp.Service;
 import com.saira.walletapp.enitity.Wallet;
 import com.saira.walletapp.exception.WalletException;
 import com.saira.walletapp.reporsitory.WalletRepository;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -10,6 +11,7 @@ import java.util.Optional;
 
 @Service
 public class WalletService {
+    @Autowired
     private WalletRepository walletRepository;
     public List<Wallet> getAll()
     {
